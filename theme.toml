@@ -1,0 +1,50 @@
+name = "ahKevinXy"
+baseURL='https://goofish-shop.github.io/hugo-academic/'
+license = "MIT"
+licenselink = "https://github.com/goofish-shop/hugo-academic"
+description = "Use the no-code website framework to easily build your site. Choose from 50+ widgets and deploy with one click! Fully personalize your site with themes, plugins, and language packs."
+homepage = "https://github.com/goofish-shop/hugo-academic"
+demosite = "https://github.com/goofish-shop/hugo-academic"
+tags = ["widgets",
+        "resume",
+        "portfolio",
+        "responsive",
+        "clean",
+        "personal",
+        "company",
+        "blog",
+        "minimal",
+        "light",
+        "dark",
+        "multilingual",
+        "documentation",
+        "landing page",
+        "projects",
+        "single page",
+        "contact form",
+        "mobile",
+        "gallery",
+        "search",
+        "presentation",
+        "simple",
+        "minimalist",
+        "starter",
+        "modern",
+        "one page",
+        "customizable",
+        "technical",
+        "product",
+        "slide"
+        ]
+features = ["page builder", "widgets", "themes", "search", "research publication system", "filterable portfolio",
+            "blog", "create courses", "talks", "events", "slides", "gallery", "contact form"]
+
+[author]
+  name = "ahKevinXy"
+  homepage = "https://ahKevinXy.github.io"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
