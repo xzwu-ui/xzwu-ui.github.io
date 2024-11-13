@@ -1,18 +1,16 @@
-primary_name: "Your Name"
+primary_name: "Ruohan Wang"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Ruohan Wang"
 
-positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+# positions:
+# - name: Undergraduate @TongjiUni
 
-
-email: "demi.ruohanwang@gmail.com"
 # cv_link: link-to-your-cv-file
-gscholar: https://www.linkedin.com/in/demi-ruohanwang/  # This is an example, replace it with your own Google Scholar ID
+gscholar: https://scholar.google.com/citations?user=Lz9tCVsAAAAJ&hl=zh-CN&authuser=2
 github: DEM1TASSE
-twitter: demisama_  # Do not include the '@' symbol
+twitter: demisama_
+linkedin: demi-ruohanwang
+email: "demi.ruohanwang@gmail.com"
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
@@ -22,29 +20,31 @@ twitter: demisama_  # Do not include the '@' symbol
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    Hi there👋 I'm Ruohan (Demi) Wang, an undergraduate student at <a href="https://en.tongji.edu.cn/p/#/" target="_blank">Tongji University</a>.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds,
-    as well as being common in domestic longhair and domestic shorthair cats.
+    In a short term, I'm focused on conducting research on <strong>large language models (LLMs)</strong> and learning to be a <strong>full-stack independent developer</strong>. In the long run, I hope to build a startup and contribute to the development of <strong>AGI</strong>.
+  </p>
+  <p>
+    I've gained research experience through internships at <a href="https://www.bytedance.com/en/" target="_blank">ByteDance</a> and <a href="https://x.com/osunlp" target="_blank">OSU NLP Group</a> (supervised by <a href="https://ysu1989.github.io/" target="_blank">Prof. Yu Su</a>). I'm currently focused on <strong>language agents</strong> and <strong>multimodal models</strong>.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+# portrait_caption: >-
+#   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+- name: Tongji University
+  logo: /assets/images/badges/tongji_logo.png
   position: >-
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+    Bachelor of Software Engineering
+  date: Sept. 2020 - Jun. 2025
+- name: University of California, Berkeley
+  logo: /assets/images/badges/berkeley_logo.png
+  position: >-
+    Electrical Engineering and Computer Sciences <br/>
+    Visiting Student
+  date: Jan. 2023 - Aug. 2023
 
 # experience:
 # - name: Peking University
@@ -53,9 +53,14 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: First Prize in International Exchange Scholarship, <br/> Tongji University
+  date: Mar. 2024
+- name: Berkeley Global Access Scholarship, <br/> Berkeley Extension
+  date: Nov. 2022
+- name: Scholarship for Outstanding Students, <br/> Tongji University
+  date: Nov. 2022 & Oct. 2021
+- name: Second Prize, China National High School Mathematics Competition
+  date: Sep. 2019
+- name: Honor Roll (Top 5%), <br/>
+        American Mathematics Competition 12
+  date: Feb. 2018
