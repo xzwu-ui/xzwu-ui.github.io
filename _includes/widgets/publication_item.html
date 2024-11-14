@@ -4,31 +4,44 @@
     }
     
     .publication-title {
-        font-size: 1.25rem;
+        font-size: 1.4rem;
     }
     
     .publication-authors {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
     
     .publication-abstract {
-        font-size: 0.85rem;
+        font-size: 1rem;
+    }
+
+    .publication-image-col {
+        width: 23% !important;
+        max-width: 23% !important;
+        padding: 1rem !important;
+    }
+
+    .publication-image-col > div {
+        height: 100%;
+    }
+
+    .publication-content-col {
+        width: 77% !important;
+        padding-right: 2% !important;
     }
 </style>
 
 {% assign item = include.item %}<div class="d-none d-md-block">
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3 d-flex align-items-stretch">
+        <div class="publication-image-col">
             {%- if item.cover -%}
-            <div style="position: relative; width: 100%;">
+            <div style="height: 100%;">
                 <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy rounded-sm" style="width: 100%; height: 100%; object-fit: cover;" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
             </div>
-            {%- else -%}
-            <svg class="bubble-visual-hash lazy w-100 rounded-sm" data-bubble-visual-hash="{{ item.id }}" viewBox="0 0 300 200"></svg>
             {%- endif -%}
         </div>
-        <div class="col-md-8 col-xl-9 p-3 pl-md-0">
-            <h5 class="publication-title mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
+        <div class="publication-content-col p-3 pl-md-0">
+            <h5 class="publication-title mt-0 mb-1 font-weight-normal"><strong>{{ item.title }}</strong></h5>
             <p class="publication-authors mt-0 mb-0">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-1 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
             <p class="publication-abstract mt-0 mb-2 text-muted">{{ item.abstract }}</p>

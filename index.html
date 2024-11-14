@@ -4,21 +4,11 @@ title : Homepage
 navbar_title: Home
 ---
 {% include widgets/profile_card.html %}
+{% include widgets/education_card.html %}
 
 {% include widgets/debug_repo_name.html %}
 
 {% include widgets/debug_url.html %}
-
-{% if site.data.display.homepage.show_experience %}
-    {% include widgets/experience_card.html %}
-{% endif %}
-
-{% if site.data.display.homepage.show_news %}
-    {% assign count_news = site.news | size %}
-    {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-    {% endif %}
-{% endif %}
 
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
@@ -27,4 +17,24 @@ navbar_title: Home
         publications=pubs
         title='<i class="fas fa-star"></i> Selected Publications'
     %}
+{% endif %}
+
+<h6 class="section-title mb-3 mt-4">Selected Projects</h6>
+<div class="row row-cols-1 row-cols-md-2 g-4 projects-grid">
+    {% for project in site.data.profile.projects %}
+    <div class="col">
+        {% include widgets/project_card.html project=project %}
+    </div>
+    {% endfor %}
+</div>
+
+{% include widgets/awards_card.html %}
+
+{% include widgets/about_me_card.html %}
+
+{% if site.data.display.homepage.show_news %}
+    {% assign count_news = site.news | size %}
+    {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+    {% endif %}
 {% endif %}

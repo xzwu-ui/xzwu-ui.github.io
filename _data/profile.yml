@@ -26,7 +26,9 @@ short_bio: >-
     In a short term, I'm focused on conducting research on <strong>large language models (LLMs)</strong> and learning to be a <strong>full-stack independent developer</strong>. In the long run, I hope to build a startup and contribute to the development of <strong>AGI</strong>.
   </p>
   <p>
-    I've gained research experience through internships at <a href="https://www.bytedance.com/en/" target="_blank">ByteDance</a> and <a href="https://x.com/osunlp" target="_blank">OSU NLP Group</a> (supervised by <a href="https://ysu1989.github.io/" target="_blank">Prof. Yu Su</a>). I'm currently focused on <strong>language agents</strong> and <strong>multimodal models</strong>.
+    I've gained research experience through internships at <a href="https://www.bytedance.com/en/" target="_blank">ByteDance</a> and <a href="https://x.com/osunlp" target="_blank">OSU NLP Group</a> (supervised by <a href="https://ysu1989.github.io/" target="_blank">Prof. Yu Su</a>). 
+    My current interests lie in <strong>language agents</strong> and <strong>multimodal models</strong>.
+    I'm also interested in participating in AI-related hackathons. 
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -34,17 +36,16 @@ portrait_url: /assets/images/photos/portrait.jpg
 #   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Tongji University
-  logo: /assets/images/badges/tongji_logo.png
-  position: >-
-    Bachelor of Software Engineering
-  date: Sept. 2020 - Jun. 2025
-- name: University of California, Berkeley
-  logo: /assets/images/badges/berkeley_logo.png
-  position: >-
-    Electrical Engineering and Computer Sciences <br/>
-    Visiting Student
-  date: Jan. 2023 - Aug. 2023
+  - school: Tongji University
+    major: Bachelor of Software Engineering
+    logo: /assets/images/badges/tongji_logo.png
+    date: Sept. 2020 - Jun. 2025
+
+  - school: University of California, Berkeley
+    major: Visiting Student
+    submajor: Electrical Engineering and Computer Sciences
+    logo: /assets/images/badges/berkeley_logo.png
+    date: Jan. 2023 - Aug. 2023
 
 # experience:
 # - name: Peking University
@@ -52,15 +53,79 @@ education:
 #   position: Research Intern
 #   date: Sep. 2019 - Jul. 2021
 
+experience:
+  - company: The Ohio State University
+    position: Research Intern
+    logo: /assets/images/badges/ohio_logo.png
+    date: Apr. 2024 - Oct. 2024
+    description: Working on Multimodal Large Language Agents. Supervised by Prof. Yu Su.
+
+  - company: ByteDance
+    position: Machine Learning Engineer Intern
+    logo: /assets/images/badges/bytedance_logo.png
+    date: Oct. 2023 - Feb. 2024
+    location: Beijing, China
+    description: At Douyin E-commerce Department. Focused on enhancing the precision of detecting e-commerce violations through fine-tuning multimodal large language models and optimizing in-context learning methods, achieving significant improvements in model accuracy and performance.
+
+  - company: University of California, Berkeley
+    position: Undergraduate Researcher
+    logo: /assets/images/badges/berkeley_logo.png
+    date: Feb. 2023 - May 2023
+    location: Berkeley, California, United States
+    description: Worked with Professor Catherine Flynn and Kent Chang to build a corpus of Irish dramas. Contributed to the structure analysis of 400+ Irish drama texts. Developed models using Regex, BERT models, or prompts for GPT-4 to predict structural elements. Fine-tuned a GPT-2 model to generate Irish drama texts.
+
 awards:
-- name: First Prize in International Exchange Scholarship, <br/> Tongji University
+- name: No. 352 (Top 1%), Alibaba Global Mathematics Competition Qualifying Round
+  date: Jun. 2024
+- name: First Prize in International Exchange Scholarship, Tongji University
   date: Mar. 2024
-- name: Berkeley Global Access Scholarship, <br/> Berkeley Extension
+- name: Berkeley Global Access Scholarship, Berkeley Extension
   date: Nov. 2022
-- name: Scholarship for Outstanding Students, <br/> Tongji University
+- name: Scholarship for Outstanding Students, Tongji University
   date: Nov. 2022 & Oct. 2021
 - name: Second Prize, China National High School Mathematics Competition
   date: Sep. 2019
-- name: Honor Roll (Top 5%), <br/>
-        American Mathematics Competition 12
+- name: Honor Roll (Top 5%), American Mathematics Competition 12
   date: Feb. 2018
+
+projects:
+  - title: "Life Buddy"
+    image: "assets/images/projects/life-buddy.png"
+    description: "Your personal lifestyle assistant for a budget-friendly life. Discover affordable dining, nail salons, entertainment, and more—all tailored to your preferences."
+    highlight: "2nd Winner @Baidu AGI Hackathon"
+    links:
+      - name: "Official Intro"
+        url: "https://hub.baai.ac.cn/view/33801"
+      - name: "Post"
+        url: "https://www.linkedin.com/posts/demi-ruohanwang_aihackathon-ai-innovation-activity-7142910582927540224-0iTP"
+    
+  - title: "Let them cook"
+    image: "assets/images/projects/let-them-cook.png"
+    description: "Nearly 40% of food in the U.S. is wasted. Reduce yours by Leting Them Cook, a recipe AI tool that generates fridge-cleaning recipes that are both beneficial to your wallet and the world."
+    highlight: "@CalHack 9.0"
+    links:
+      - name: "Devpost"
+        url: "https://devpost.com/software/let-them-cook-9yb6za"
+      - name: "Code"
+        url: "https://github.com/DEM1TASSE/Let-them-cook"
+    
+  - title: "cowbell.ai"
+    image: "assets/images/projects/cowbell.ai.png"
+    description: "Unopinionated music production assistant. Any instrument, anywhere."
+    highlight: "@OutsideLLMs"
+    links:
+      - name: "Devpost"
+        url: "https://devpost.com/software/cowbell-ai"
+      - name: "Code"
+        url: "https://github.com/DEM1TASSE/cowbell.ai"
+      - name: "Demo"
+        url: "https://x.com/jianghoy/status/1688368655166513153"
+    
+  - title: "Healper"
+    image: "assets/images/projects/healper.png"
+    description: "An AI-powered platform for psychological counseling support—assess your mental state, connect with professional counselors, and streamline record-keeping."
+    links:
+      - name: "Frontend"
+        url: "https://github.com/DEM1TASSE/Healper-FrontEnd"
+      - name: "Backend"
+        url: "https://github.com/Gxyrious/Healper-BackEnd"
