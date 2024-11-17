@@ -110,7 +110,7 @@ projects:
   - title: "cowbell.ai"
     image: "assets/images/projects/cowbell.ai.png"
     description: "Unopinionated music production assistant. Any instrument, anywhere."
-    highlight: "@OutsideLLMs"
+    highlight: "@OutsideLLMs Hackathon"
     links:
       - name: "Devpost"
         url: "https://devpost.com/software/cowbell-ai"
