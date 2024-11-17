@@ -3,34 +3,54 @@ layout: default
 title : Homepage
 navbar_title: Home
 ---
-{% include widgets/profile_card.html %}
-{% include widgets/education_card.html %}
+<div style="height: 60px;"></div>  <!-- 添加顶部空间 -->
 
-{% include widgets/debug_repo_name.html %}
+<section id="profile" class="mb-4">
+    {% include widgets/profile_card.html %}
+</section>
 
-{% include widgets/debug_url.html %}
+<section id="education" class="mb-4">
+    {% include widgets/education_card.html %}
+</section>
 
-{% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {% 
-        include widgets/publication_card.html 
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-    %}
-{% endif %}
-
-<h6 class="section-title mb-3 mt-4">Selected Projects</h6>
-<div class="row row-cols-1 row-cols-md-2 g-4 projects-grid">
-    {% for project in site.data.profile.projects %}
-    <div class="col">
-        {% include widgets/project_card.html project=project %}
+<section id="experiences">
+    <h6 class="section-title mb-3 mt-4" style="font-size: 1.6rem;">Experience</h6>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for experience in site.data.profile.experience %}
+            {% include widgets/experience_card.html experience=experience %}
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
+</section>
 
-{% include widgets/awards_card.html %}
+<section id="publications" class="mb-4">
+    {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {% 
+            include widgets/publication_card.html 
+            publications=pubs
+            title='<i class="fas fa-star"></i> Selected Publications'
+        %}
+    {% endif %}
+</section>
 
-{% include widgets/about_me_card.html %}
+<section id="projects" class="mb-4">
+    <h6 class="section-title mb-3 mt-4">Selected Projects</h6>
+    <div class="row row-cols-1 row-cols-md-2 g-4 projects-grid">
+        {% for project in site.data.profile.projects %}
+        <div class="col">
+            {% include widgets/project_card.html project=project %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="honors" class="mb-4">
+    {% include widgets/awards_card.html %}
+</section>
+
+<section id="about">
+    {% include widgets/about_me_card.html %}
+</section>
 
 {% if site.data.display.homepage.show_news %}
     {% assign count_news = site.news | size %}

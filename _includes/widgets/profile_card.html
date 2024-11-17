@@ -14,13 +14,13 @@
                     </div>
 
                     <!-- 右侧：头像和社交媒体图标 -->
-                    <div class="col-md-3 d-flex flex-column align-items-center pt-md-4 pl-3">
+                    <div class="col-md-3 d-flex flex-column align-items-center pt-md-4 ">
                         {% if site.data.profile.portrait_url %}
                         <div class="mb-2">
                             <img 
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
                                 class="figure-img img-fluid img-thumbnail" 
-                                style="height: 200px; width: auto;"
+                                style="height: 210px; width: 210px;"
                                 data-toggle="tooltip" 
                                 data-placement="top" 
                                 title="{{ site.data.profile.portrait_caption }}">
@@ -30,8 +30,8 @@
                         <div class="mt-2 d-flex justify-content-center" style="width: 100%;">
 
                             {% if site.data.profile.twitter %}
-                            <a class="px-2" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-                                <i class="fab fa-twitter" style="font-size: 24px;"></i>
+                            <a class="px-1" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                                <i class="fab fa-x-twitter" style="font-size: 24px;"></i>
                             </a>
                             {% endif %}
 
@@ -53,7 +53,11 @@
                             </a>
                             {% endif %}
 
-                            <a class="px-2" href="mailto:{{ site.data.profile.email | encode_email }}">
+                            <a class="px-2" target="_blank" href="{{ '/assets/materials/CV_Ruohan Wang.pdf' | relative_url }}">
+                                <i class="fas fa-file-alt" style="font-size: 24px;"></i>
+                            </a>
+
+                            <a class="px-2" href="mailto:{{site.data.profile.email}}">
                                 <i class="fas fa-envelope" style="font-size: 24px;"></i>
                             </a>
                         </div>

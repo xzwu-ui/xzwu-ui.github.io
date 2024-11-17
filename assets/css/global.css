@@ -71,7 +71,7 @@ div.lazy {
 .card h6,
 .my-3 h6,
 .border-bottom h6 {
-    font-size: 1.6rem !important;
+    font-size: 1.5rem !important;
     font-weight: 500;
     margin-bottom: 0;
 }
@@ -85,7 +85,7 @@ h6.border-bottom {
 /* 统一标题垂直位置 */
 .card-body h6 {
     margin-top: 0 !important;
-    margin-bottom: 2rem !important;
+    margin-bottom: 1.5rem !important;
     padding-top: 0 !important;
 }
 
@@ -104,4 +104,5 @@ h6.border-bottom {
     font-size: 1.6rem;
     font-weight: normal;
     margin-left: 1.2rem;
+    margin-bottom: 1.5rem !important;
 }

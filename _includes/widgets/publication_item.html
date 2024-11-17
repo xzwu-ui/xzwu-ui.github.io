@@ -29,9 +29,21 @@
         width: 77% !important;
         padding-right: 2% !important;
     }
+
+    .publication-item {
+        transition: box-shadow 0.3s ease;
+        border-radius: 0.375rem;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+        margin-bottom: 1rem;
+        background-color: white;
+    }
+
+    .publication-item:hover {
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    }
 </style>
 
-{% assign item = include.item %}<div class="d-none d-md-block">
+{% assign item = include.item %}<div class="publication-item d-none d-md-block">
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="publication-image-col">
             {%- if item.cover -%}
@@ -63,7 +75,7 @@
     </div>
 </div>
 
-<div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-top{% endif %} {% if include.last %}rounded-bottom{% endif %} {% if item.cover %}lazy{% endif %}" data-src="{{ item.cover | relative_url }}">
+<div class="publication-item row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-top{% endif %} {% if include.last %}rounded-bottom{% endif %} {% if item.cover %}lazy{% endif %}" data-src="{{ item.cover | relative_url }}">
     <div class="w-100" style="background-color: rgba(255,255,255,0.9);">
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>

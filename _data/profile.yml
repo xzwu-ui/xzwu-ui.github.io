@@ -54,25 +54,23 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 experience:
-  - company: The Ohio State University
-    position: Research Intern
-    logo: /assets/images/badges/ohio_logo.png
-    date: Apr. 2024 - Oct. 2024
-    description: Working on Multimodal Large Language Agents. Supervised by Prof. Yu Su.
+  - company: "The Ohio State University"
+    position: "Research Intern"
+    date: "Apr. 2024 - Oct. 2024"
+    logo: "/assets/images/badges/ohio_logo.png"
+    brief: "Improving the performance of <br> GUI Agents across platforms"
 
-  - company: ByteDance
-    position: Machine Learning Engineer Intern
-    logo: /assets/images/badges/bytedance_logo.png
-    date: Oct. 2023 - Feb. 2024
-    location: Beijing, China
-    description: At Douyin E-commerce Department. Focused on enhancing the precision of detecting e-commerce violations through fine-tuning multimodal large language models and optimizing in-context learning methods, achieving significant improvements in model accuracy and performance.
+  - company: "ByteDance"
+    position: "Machine Learning Engineer Intern"
+    date: "Oct. 2023 - Feb. 2024"
+    logo: "/assets/images/badges/bytedance_logo.png"
+    brief: "Enhancing e-commerce violation detection with LLMs"
 
-  - company: University of California, Berkeley
-    position: Undergraduate Researcher
-    logo: /assets/images/badges/berkeley_logo.png
-    date: Feb. 2023 - May 2023
-    location: Berkeley, California, United States
-    description: Worked with Professor Catherine Flynn and Kent Chang to build a corpus of Irish dramas. Contributed to the structure analysis of 400+ Irish drama texts. Developed models using Regex, BERT models, or prompts for GPT-4 to predict structural elements. Fine-tuned a GPT-2 model to generate Irish drama texts.
+  - company: "University of California, Berkeley"
+    position: "Undergraduate Researcher"
+    date: "Feb. 2023 - May 2023"
+    logo: "/assets/images/badges/berkeley_logo.png"
+    brief: "Building and analyzing Irish drama corpus"
 
 awards:
 - name: No. 352 (Top 1%), Alibaba Global Mathematics Competition Qualifying Round
