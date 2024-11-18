@@ -27,7 +27,7 @@
         <!-- Brief 格子 -->
         <div style="height: 3.2rem; width: 85%;">
             {% if experience.brief %}
-            <div style="font-size: 1.1rem; color: #333; line-height: 1.4;">
+            <div style="font-size: 1.1rem; color: #333; line-height: 1.4; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;">
                 {{ experience.brief }}
             </div>
             {% endif %}
@@ -48,7 +48,23 @@
 /* 添加移动端样式 */
 @media (max-width: 768px) {
     .experience-card .card-body {
-        padding: 2.5rem 1.5rem 1.5rem !important;  /* 上2.5rem，左右1.5rem，下1.5rem */
+        padding: 2.5rem 1.5rem 1.5rem !important;
+    }
+    
+    /* 调整公司和职位之间的间距 */
+    .experience-card .card-body > div:nth-child(2) {
+        height: 3rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+    
+    /* 调整职位字号 */
+    .experience-card .card-body h5 {
+        font-size: 1rem !important;
+    }
+    
+    /* 调整简介字号 */
+    .experience-card .card-body > div:last-child > div {
+        font-size: 0.95rem !important;
     }
 }
 </style>

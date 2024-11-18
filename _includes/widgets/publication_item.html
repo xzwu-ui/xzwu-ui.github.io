@@ -41,6 +41,25 @@
     .publication-item:hover {
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
     }
+
+    @media (max-width: 768px) {
+        .publication-item h5 {
+            font-size: 1.2rem !important;
+        }
+
+        .publication-item p {
+            font-size: 1rem !important;
+        }
+
+        .publication-item .btn-sm {
+            font-size: 0.9rem !important;
+            padding: 0.1rem 0.4rem !important;
+        }
+
+        .publication-item .text-muted {
+            font-size: 0.85rem !important;
+        }
+    }
 </style>
 
 {% assign item = include.item %}<div class="publication-item d-none d-md-block">
