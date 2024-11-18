@@ -1,5 +1,5 @@
 {% assign project = include.project %}
-<div class="project-card border-0 shadow-sm bg-white h-100">
+<div class="project-card card border-0 shadow-sm bg-white h-100">
     <!-- 图片部分 -->
     {% if project.image %}
     <div class="project-image">
@@ -16,7 +16,15 @@
                     <strong>{{ project.title }}</strong>
                 </h3>
                 {% if project.highlight %}
-                <span class="project-badge ms-3">{{ project.highlight }}</span>
+                <span class="project-badge ms-3">
+                    {% if project.highlight_url %}
+                    <a href="{{ project.highlight_url }}" target="_blank" class="highlight-link">
+                        {{ project.highlight }}
+                    </a>
+                    {% else %}
+                    {{ project.highlight }}
+                    {% endif %}
+                </span>
                 {% endif %}
             </div>
             
@@ -94,13 +102,13 @@
     border-radius: 0.25rem;
     font-size: 0.9rem;
     font-weight: normal;
-    white-space: nowrap;
+    white-space: normal;
     margin-left: 12px !important;
 }
 
 .project-links {
     margin-top: auto;
-    padding-top: 1.5rem;
+    padding-top: 1rem !important;
 }
 
 .btn-sm {
@@ -115,6 +123,65 @@
 }
 
 .project-description {
-    margin: 1rem 0 1.5rem 0;
+    margin: 0.8rem 0 1rem 0 !important;
+}
+
+.highlight-link {
+    color: white;
+    text-decoration: none;
+}
+
+.highlight-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* 添加移动端样式 */
+@media (max-width: 768px) {
+    h3.project-title {
+        font-size: 1.6rem !important;
+    }
+
+    p.project-description {
+        margin: 0.8rem 0 0.5rem 0 !important;
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        max-height: none !important;
+        overflow: visible !important;
+        display: block !important;
+    }
+    
+    .project-links {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    body .container .row .col-12 .project-card {
+        margin-bottom: 2.5rem !important;
+        min-height: auto !important;
+    }
+
+    body .container .row .col-12:last-child .project-card {
+        margin-bottom: 0 !important;
+    }
+
+    /* 标题和标签的容器 */
+    .d-flex.align-items-center.mb-2 {
+        flex-wrap: wrap !important;
+        gap: 0.5rem !important;
+    }
+
+    /* 标题 */
+    h3.project-title {
+        font-size: 1.6rem !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+
+    /* 标签 */
+    .project-badge {
+        margin-left: 0 !important;
+        font-size: 0.9rem !important;
+    }
 }
 </style>

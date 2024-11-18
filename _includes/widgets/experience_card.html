@@ -1,38 +1,36 @@
-<div class="col" style="margin-bottom: 0.6em;">
-    <div class="experience-card border-0 shadow-sm bg-white h-100" style="border-radius: 0.375rem;">
-        <div class="card-body d-flex flex-column align-items-center text-center" style="padding: 2rem 1.5rem 2rem;">
-            <!-- Logo 格子 -->
-            <div style="height: 80px; margin-bottom: 1rem;">
-                {% if experience.logo %}
-                <img src="{{ experience.logo | relative_url }}" alt="logo" style="width: 80px; height: 80px; object-fit: contain;">
-                {% endif %}
-            </div>
+<div class="experience-card card border-0 shadow-sm bg-white h-100">
+    <div class="card-body d-flex flex-column align-items-center text-center" style="padding: 2rem 1.5rem;">
+        <!-- Logo 格子 -->
+        <div style="height: 80px; margin-bottom: 1rem;">
+            {% if experience.logo %}
+            <img src="{{ experience.logo | relative_url }}" alt="logo" style="width: 80px; height: 80px; object-fit: contain;">
+            {% endif %}
+        </div>
 
-            <!-- Company 格子 -->
-            <div style="height: 4rem; width: 100%; margin-bottom: 0.5rem;">
-                <h6 style="font-size: 1.4rem; color: #333; margin: 0; line-height: 1.3; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;">{{ experience.company }}</h6>
-            </div>
+        <!-- Company 格子 -->
+        <div style="height: 4rem; width: 100%; margin-bottom: 0.5rem;">
+            <h6 style="font-size: 1.4rem; color: #333; margin: 0; line-height: 1.3; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;"><strong>{{ experience.company }}</strong></h6>
+        </div>
 
-            <!-- Position 格子 -->
-            <div style="height: 2rem; width: 100%; margin-bottom: 0.2rem;">
-                <h5 style="font-size: 1.1em; font-weight: 500; line-height: 1.2; margin: 0;">{{ experience.position }}</h5>
-            </div>
+        <!-- Position 格子 -->
+        <div style="height: 2rem; width: 100%; margin-bottom: 0.2rem;">
+            <h5 style="font-size: 1.1em; font-weight: 500; line-height: 1.2; margin: 0;">{{ experience.position }}</h5>
+        </div>
 
-            <!-- Date 格子 -->
-            <div style="height: 1.2rem; width: 80%; margin-bottom: 0.8rem;">
-                <div class="text-muted" style="font-size: 0.95rem;">
-                    {{ experience.date }}
-                </div>
+        <!-- Date 格子 -->
+        <div style="height: 1.2rem; width: 80%; margin-bottom: 0.8rem;">
+            <div class="text-muted" style="font-size: 0.95rem;">
+                {{ experience.date }}
             </div>
+        </div>
 
-            <!-- Brief 格子 -->
-            <div style="height: 3.2rem; width: 85%;">
-                {% if experience.brief %}
-                <div style="font-size: 1.1rem; color: #333; line-height: 1.4;">
-                    {{ experience.brief }}
-                </div>
-                {% endif %}
+        <!-- Brief 格子 -->
+        <div style="height: 3.2rem; width: 85%;">
+            {% if experience.brief %}
+            <div style="font-size: 1.1rem; color: #333; line-height: 1.4;">
+                {{ experience.brief }}
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
@@ -45,5 +43,12 @@
 .experience-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+/* 添加移动端样式 */
+@media (max-width: 768px) {
+    .experience-card .card-body {
+        padding: 2.5rem 1.5rem 1.5rem !important;  /* 上2.5rem，左右1.5rem，下1.5rem */
+    }
 }
 </style>

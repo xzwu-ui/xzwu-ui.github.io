@@ -2,15 +2,25 @@
     <div class="container">
         <div class="row my-3">
             <div class="col-6">
-                <div class="text-muted">
+                <div class="text-muted footer-text">
                     Last updated: {{ "now" | date: "%b %Y" }}
                 </div>
             </div>
             <div class="col-6">
-                <div class="text-right text-muted">
+                <div class="text-right text-muted footer-text">
                     Built based on &nbsp;{{ site.data.display.footer_text }}
                 </div>
             </div>
         </div>
     </div>
 </footer>
+
+<style>
+/* 桌面端样式 */
+@media (min-width: 769px) {
+    .footer-text {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+</style>

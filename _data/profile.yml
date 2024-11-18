@@ -91,6 +91,7 @@ projects:
     image: "assets/images/projects/life-buddy.png"
     description: "Your personal lifestyle assistant for a budget-friendly life. Discover affordable dining, nail salons, entertainment, and more—all tailored to your preferences."
     highlight: "2nd Winner @Baidu AGI Hackathon"
+    highlight_url: "https://aistudio.baidu.com/competition/detail/1103/0/introduction"
     links:
       - name: "Official Intro"
         url: "https://hub.baai.ac.cn/view/33801"
@@ -101,6 +102,7 @@ projects:
     image: "assets/images/projects/let-them-cook.png"
     description: "Nearly 40% of food in the U.S. is wasted. Reduce yours by Leting Them Cook, a recipe AI tool that generates fridge-cleaning recipes that are both beneficial to your wallet and the world."
     highlight: "@CalHack 9.0"
+    highlight_url: "https://hackberkeley.org/"
     links:
       - name: "Devpost"
         url: "https://devpost.com/software/let-them-cook-9yb6za"
@@ -110,7 +112,8 @@ projects:
   - title: "cowbell.ai"
     image: "assets/images/projects/cowbell.ai.png"
     description: "Unopinionated music production assistant. Any instrument, anywhere."
-    highlight: "@OutsideLLMs Hackathon"
+    highlight: "@Outside LLMs Hackathon"
+    highlight_url: "https://outsidellms.devpost.com/"
     links:
       - name: "Devpost"
         url: "https://devpost.com/software/cowbell-ai"

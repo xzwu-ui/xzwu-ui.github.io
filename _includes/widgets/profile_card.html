@@ -1,64 +1,62 @@
 <div class="row">
     <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body pt-4 pl-5 pr-5 pb-3">
+        <div class="card profile-card border-0 shadow-sm bg-white">
+            <div class="card-body pt-md-4 pt-mb-2 px-md-5 px-4 pb-3">
                 <div class="row">
                     <!-- 左侧：自我介绍 -->
                     <div class="col-md-9 p-md-2">
-                        <div class="h1 font-weight-normal" style="font-size: 2.2rem;">
+                        <div class="h1 font-weight-normal profile-name">
                             {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
                         </div>
-                        <div class="text-profile-bio mt-3" style = "font-size: 1.1rem"  {% if site.data.profile.short_bio_text_justify %}style="text-align: justify"{% endif %}>
+                        <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify"{% endif %}>
                             {{ site.data.profile.short_bio }}
                         </div>
                     </div>
 
                     <!-- 右侧：头像和社交媒体图标 -->
-                    <div class="col-md-3 d-flex flex-column align-items-center pt-md-4 ">
+                    <div class="col-md-3 d-flex flex-column align-items-center pt-md-4">
                         {% if site.data.profile.portrait_url %}
-                        <div class="mb-2">
+                        <div class="portrait-container mb-2">
                             <img 
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
-                                class="figure-img img-fluid img-thumbnail" 
-                                style="height: 210px; width: 210px;"
+                                class="portrait-img"
                                 data-toggle="tooltip" 
                                 data-placement="top" 
                                 title="{{ site.data.profile.portrait_caption }}">
                         </div>
                         {% endif %}
 
-                        <div class="mt-2 d-flex justify-content-center" style="width: 100%;">
-
+                        <div class="social-icons mt-2 d-flex justify-content-center">
                             {% if site.data.profile.twitter %}
                             <a class="px-1" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-                                <i class="fab fa-x-twitter" style="font-size: 24px;"></i>
+                                <i class="fab fa-x-twitter"></i>
                             </a>
                             {% endif %}
 
                             {% if site.data.profile.linkedin %}
                             <a class="px-2" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
-                                <i class="fab fa-linkedin" style="font-size: 24px;"></i>
+                                <i class="fab fa-linkedin"></i>
                             </a>
                             {% endif %}
 
                             {% if site.data.profile.gscholar %}
                             <a class="px-2" target="_blank" href="{{ site.data.profile.gscholar }}">
-                                <i class="fab fa-google-scholar" style="font-size: 24px;"></i>
+                                <i class="fab fa-google-scholar"></i>
                             </a>
                             {% endif %}
 
                             {% if site.data.profile.github %}
                             <a class="px-2" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
-                                <i class="fab fa-github" style="font-size: 24px;"></i>
+                                <i class="fab fa-github"></i>
                             </a>
                             {% endif %}
 
                             <a class="px-2" target="_blank" href="{{ '/assets/materials/CV_Ruohan Wang.pdf' | relative_url }}">
-                                <i class="fas fa-file-alt" style="font-size: 24px;"></i>
+                                <i class="fas fa-file-alt"></i>
                             </a>
 
                             <a class="px-2" href="mailto:{{site.data.profile.email}}">
-                                <i class="fas fa-envelope" style="font-size: 24px;"></i>
+                                <i class="fas fa-envelope"></i>
                             </a>
                         </div>
                     </div>
