@@ -1,4 +1,4 @@
-<div class="row mt-3">
+<div class="row about-me-container">
     <div class="col">
         <div class="card about-me-card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
@@ -22,7 +22,15 @@
 </div> 
 
 <style>
+.about-me-container {
+    margin-top: 2rem;  /* web端的边距 */
+}
+
 @media (max-width: 768px) {
+    .about-me-container {
+        margin-top: 1.5rem;  /* 移动端的边距 */
+    }
+
     .card-body h6 {
         font-size: 1.2rem !important;
     }
