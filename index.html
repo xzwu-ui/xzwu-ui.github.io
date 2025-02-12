@@ -9,6 +9,15 @@ navbar_title: Home
     {% include widgets/profile_card.html %}
 </section>
 
+<section id="news" class="mb-4"></section>
+    {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+            {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+    {% endif %}
+</section>
+
 <section id="education" class="mb-4">
     {% include widgets/education_card.html %}
 </section>
@@ -59,13 +68,6 @@ navbar_title: Home
 <section id="about">
     {% include widgets/about_me_card.html %}
 </section>
-
-{% if site.data.display.homepage.show_news %}
-    {% assign count_news = site.news | size %}
-    {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-    {% endif %}
-{% endif %}
 
 <style>
 @media (max-width: 768px) {

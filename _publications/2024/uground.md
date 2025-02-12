@@ -2,11 +2,12 @@
 title: "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents"
 date: 2024-03-01
 selected: true
-# pub: "arXiv"
-# pub_date: "2024"
+pub: "ICLR"
+pub_date: "2025"
+pub_last: ' <span class="badge badge-pill badge-primary">Oral (1.8%)</span>'
 cover: /assets/images/covers/uground.png
 abstract: >-
-  UGround is a universal visual grounding model that locates elements by pixel coordinates on GUIs, which significantly outperforms previous models across web, mobile, and desktop benchmarks.
+  We present SeeAct-V, a human-like, vision-only GUI agent framework, and UGround, a SOTA GUI visual grounding model trained on cost-effective synthetic data, marking the first practical demonstration of SOTA performance for vision-only GUI agents.
 authors:
 - Boyu Gou
 - Ruohan Wang
