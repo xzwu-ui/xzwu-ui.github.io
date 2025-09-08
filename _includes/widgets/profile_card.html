@@ -2,7 +2,7 @@
     <div class="col">
         <div class="card profile-card border-0 shadow-sm bg-white">
             <div class="card-body pt-md-4 pt-mb-2 px-md-5 px-4 pb-3">
-                <div class="row">
+                <div class="row align-items-center">
                     <!-- 左侧：自我介绍 -->
                     <div class="col-md-9 p-md-2">
                         <div class="h1 font-weight-normal profile-name">
@@ -14,9 +14,9 @@
                     </div>
 
                     <!-- 右侧：头像和社交媒体图标 -->
-                    <div class="col-md-3 d-flex flex-column align-items-center pt-md-4">
+                    <div class="col-md-3 d-flex flex-column align-items-center">
                         {% if site.data.profile.portrait_url %}
-                        <div class="portrait-container mb-2">
+                        <div class="portrait-container portrait-offset mb-2" style="--avatar-offset: {{ site.data.profile.portrait_offset | default: '0px' }};">
                             <img 
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
                                 class="portrait-img"
@@ -51,7 +51,7 @@
                             </a>
                             {% endif %}
 
-                            <a class="px-2" target="_blank" href="{{ '/assets/materials/CV.pdf' | relative_url }}">
+                            <a class="px-2" target="_blank" href="{{ '/assets/materials/CV_Demi Ruohan Wang.pdf' | relative_url }}">
                                 <i class="fas fa-file-alt"></i>
                             </a>
 

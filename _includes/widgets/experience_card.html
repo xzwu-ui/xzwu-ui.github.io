@@ -25,9 +25,9 @@
         </div>
 
         <!-- Brief 格子 -->
-        <div style="height: 3.2rem; width: 85%;">
+        <div style="min-height: 3.8rem; width: 90%;">
             {% if experience.brief %}
-            <div style="font-size: 1.1rem; color: #333; line-height: 1.4; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;">
+            <div style="font-size: 1.1rem; color: #333; line-height: 1.4; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;">
                 {{ experience.brief }}
             </div>
             {% endif %}
@@ -66,9 +66,13 @@
         font-size: 1rem !important;
     }
     
-    /* 调整简介字号 */
+    /* 调整简介字号并在移动端显示完整文本 */
     .experience-card .card-body > div:last-child > div {
         font-size: 0.95rem !important;
+        display: block !important;
+        -webkit-line-clamp: unset !important;
+        -webkit-box-orient: unset !important;
+        overflow: visible !important;
     }
 }
 </style>

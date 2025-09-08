@@ -212,7 +212,8 @@ h6.border-bottom {
 
 .portrait-container {
     width: 210px;
-    height: 210px;
+    aspect-ratio: 3 / 4; /* vertical 3:4 */
+    height: auto;
     overflow: hidden;
     border-radius: 4px;
 }
@@ -222,6 +223,11 @@ h6.border-bottom {
     height: 100%;
     object-fit: cover;
     border: 1px solid #dee2e6;
+}
+
+/* Adjustable vertical offset for avatar (desktop only by default) */
+.portrait-offset {
+    margin-top: var(--avatar-offset, 0);
 }
 
 .social-icons i {
@@ -241,8 +247,14 @@ h6.border-bottom {
     
     .portrait-container {
         width: 180px;
-        height: 180px;
+        aspect-ratio: 3 / 4; /* vertical 3:4 */
+        height: auto;
         margin: 1rem auto;
+    }
+
+    /* Disable custom offset on mobile for better layout */
+    .portrait-offset {
+        margin-top: 0 !important;
     }
     
     .social-icons {

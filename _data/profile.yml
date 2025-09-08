@@ -1,6 +1,6 @@
-primary_name: "Ruohan Wang"
+primary_name: "Demi Ruohan Wang"
 secondary_name: ""
-navbar_name: "Ruohan Wang"
+navbar_name: "Demi Ruohan Wang"
 
 # positions:
 # - name: Undergraduate @TongjiUni
@@ -10,7 +10,7 @@ gscholar: https://scholar.google.com/citations?user=Lz9tCVsAAAAJ&hl=zh-CN&authus
 github: DEM1TASSE
 twitter: demisama_
 linkedin: demi-ruohanwang
-email: "demi.ruohanwang@gmail.com"
+email: "demiw@andrew.cmu.edu"
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
@@ -20,22 +20,31 @@ email: "demi.ruohanwang@gmail.com"
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Hi there👋 I'm Ruohan (Demi) Wang, an undergraduate student at <a href="https://en.tongji.edu.cn/p/#/" target="_blank">Tongji University</a>.
+    Hi there👋 I'm Demi Ruohan Wang, a Master's student at <a href="https://lti.cs.cmu.edu/" target="_blank">Carnegie Mellon University, Language Technologies Institute</a>.
   </p>
   <p>
-    In a short term, I'm focused on conducting research on <strong>large language models (LLMs)</strong> and learning to be a <strong>full-stack independent developer</strong>. In the long run, I hope to build a startup and contribute to the development of <strong>AGI</strong>.
+    In a short term, I'm focused on conducting research on <strong>large language models (LLMs)</strong>, as well as learning to be a <strong>full-stack independent developer</strong>. In the long run, I hope to build a startup and contribute to the development of <strong>AGI</strong>.
   </p>
   <p>
-    I've gained research experience through internships at <a href="https://www.bytedance.com/en/" target="_blank">ByteDance</a> and <a href="https://x.com/osunlp" target="_blank">OSU NLP Group</a> (supervised by <a href="https://ysu1989.github.io/" target="_blank">Prof. Yu Su</a>). 
-    My current interests lie in <strong>language agents</strong> and <strong>multimodal models</strong>.
-    I'm also interested in participating in AI-related hackathons. 
+    I've gained research experience through internships at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank">Microsoft Research Asia</a>, <a href="https://www.bytedance.com/en/" target="_blank">ByteDance</a> and <a href="https://x.com/osunlp" target="_blank">OSU NLP Group</a> (supervised by <a href="https://ysu1989.github.io/" target="_blank">Prof. Yu Su</a>). 
+    I'm currently interested in <strong>building agents</strong> that can <strong>better understand and execute tasks</strong>, and enhancing <strong>model's multimodal reasoning abilities</strong> to support this.
+  </p>
+  <p>
+    I am seeking Summer 2026 internships as a Machine Learning Engineer or Research Scientist. Feel free to reach out if you have relevant opportunities!
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
+# Fine-tune avatar vertical position on desktop (e.g., -8px, 0px, 6px)
+portrait_offset: 16px
 # portrait_caption: >-
 #   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
+  - school: Carnegie Mellon University
+    major: "Master's degree, Intelligent Information Systems"
+    logo: /assets/images/badges/cmu_logo.png
+    submajor: "School of Computer Science, Language Technologies Institute"
+    date: Aug. 2025 - Dec. 2026 (Expected)
   - school: Tongji University
     major: Bachelor of Software Engineering
     logo: /assets/images/badges/tongji_logo.png
@@ -54,11 +63,17 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 experience:
+  - company: "Microsoft Research Asia"
+    position: "Research Intern"
+    date: "Mar. 2023 - Jul. 2024"
+    logo: "assets/images/badges/microsoft_logo.png"
+    brief: "Exploring efficient and effective LLM reasoning with RLVR"
+
   - company: "The Ohio State University"
     position: "Research Intern"
     date: "Apr. 2024 - Oct. 2024"
     logo: "/assets/images/badges/ohio_logo.png"
-    brief: "Improving the performance of <br> GUI Agents across platforms"
+    brief: "Enhancing grounding toward more generalist GUI agents"
 
   - company: "ByteDance"
     position: "Machine Learning Engineer Intern"
@@ -66,11 +81,11 @@ experience:
     logo: "/assets/images/badges/bytedance_logo.png"
     brief: "Enhancing e-commerce violation detection with LLMs"
 
-  - company: "University of California, Berkeley"
-    position: "Undergraduate Researcher"
-    date: "Feb. 2023 - May 2023"
-    logo: "/assets/images/badges/berkeley_logo.png"
-    brief: "Building and analyzing Irish <br> drama corpus"
+  # - company: "University of California, Berkeley"
+  #   position: "Undergraduate Researcher"
+  #   date: "Feb. 2023 - May 2023"
+  #   logo: "/assets/images/badges/berkeley_logo.png"
+  #   brief: "Building and analyzing Irish <br> drama corpus"
 
 awards:
 - name: No. 352 (Top 1%), Alibaba Global Mathematics Competition Qualifying Round
@@ -86,47 +101,47 @@ awards:
 - name: Honor Roll (Top 5%), American Mathematics Competition 12
   date: Feb. 2018
 
-projects:
-  - title: "Life Buddy"
-    image: "assets/images/projects/life-buddy.png"
-    description: "Your personal lifestyle assistant for a budget-friendly life. Discover affordable dining, nail salons, entertainment, and more—all tailored to your preferences."
-    highlight: "2nd Winner @Baidu AGI Hackathon"
-    highlight_url: "https://aistudio.baidu.com/competition/detail/1103/0/introduction"
-    links:
-      - name: "Official Intro"
-        url: "https://hub.baai.ac.cn/view/33801"
-      - name: "Post"
-        url: "https://www.linkedin.com/posts/demi-ruohanwang_aihackathon-ai-innovation-activity-7142910582927540224-0iTP"
+# projects:
+#   - title: "Life Buddy"
+#     image: "assets/images/projects/life-buddy.png"
+#     description: "Your personal lifestyle assistant for a budget-friendly life. Discover affordable dining, nail salons, entertainment, and more—all tailored to your preferences."
+#     highlight: "2nd Winner @Baidu AGI Hackathon"
+#     highlight_url: "https://aistudio.baidu.com/competition/detail/1103/0/introduction"
+#     links:
+#       - name: "Official Intro"
+#         url: "https://hub.baai.ac.cn/view/33801"
+#       - name: "Post"
+#         url: "https://www.linkedin.com/posts/demi-ruohanwang_aihackathon-ai-innovation-activity-7142910582927540224-0iTP"
     
-  - title: "Let them cook"
-    image: "assets/images/projects/let-them-cook.png"
-    description: "Nearly 40% of food in the U.S. is wasted. Reduce yours by Leting Them Cook, a recipe AI tool that generates fridge-cleaning recipes that are both beneficial to your wallet and the world."
-    highlight: "@CalHack 9.0"
-    highlight_url: "https://hackberkeley.org/"
-    links:
-      - name: "Devpost"
-        url: "https://devpost.com/software/let-them-cook-9yb6za"
-      - name: "Code"
-        url: "https://github.com/DEM1TASSE/Let-them-cook"
+#   - title: "Let them cook"
+#     image: "assets/images/projects/let-them-cook.png"
+#     description: "Nearly 40% of food in the U.S. is wasted. Reduce yours by Leting Them Cook, a recipe AI tool that generates fridge-cleaning recipes that are both beneficial to your wallet and the world."
+#     highlight: "@CalHack 9.0"
+#     highlight_url: "https://hackberkeley.org/"
+#     links:
+#       - name: "Devpost"
+#         url: "https://devpost.com/software/let-them-cook-9yb6za"
+#       - name: "Code"
+#         url: "https://github.com/DEM1TASSE/Let-them-cook"
     
-  - title: "cowbell.ai"
-    image: "assets/images/projects/cowbell.ai.png"
-    description: "Unopinionated music production assistant. Any instrument, anywhere."
-    highlight: "@Outside LLMs Hackathon"
-    highlight_url: "https://outsidellms.devpost.com/"
-    links:
-      - name: "Devpost"
-        url: "https://devpost.com/software/cowbell-ai"
-      - name: "Code"
-        url: "https://github.com/DEM1TASSE/cowbell.ai"
-      - name: "Demo"
-        url: "https://x.com/jianghoy/status/1688368655166513153"
+#   - title: "cowbell.ai"
+#     image: "assets/images/projects/cowbell.ai.png"
+#     description: "Unopinionated music production assistant. Any instrument, anywhere."
+#     highlight: "@Outside LLMs Hackathon"
+#     highlight_url: "https://outsidellms.devpost.com/"
+#     links:
+#       - name: "Devpost"
+#         url: "https://devpost.com/software/cowbell-ai"
+#       - name: "Code"
+#         url: "https://github.com/DEM1TASSE/cowbell.ai"
+#       - name: "Demo"
+#         url: "https://x.com/jianghoy/status/1688368655166513153"
     
-  - title: "Healper"
-    image: "assets/images/projects/healper.png"
-    description: "An AI-powered platform for psychological counseling support—assess your mental state, connect with professional counselors, and streamline record-keeping."
-    links:
-      - name: "Frontend"
-        url: "https://github.com/DEM1TASSE/Healper-FrontEnd"
-      - name: "Backend"
-        url: "https://github.com/Gxyrious/Healper-BackEnd"
+#   - title: "Healper"
+#     image: "assets/images/projects/healper.png"
+#     description: "An AI-powered platform for psychological counseling support—assess your mental state, connect with professional counselors, and streamline record-keeping."
+#     links:
+#       - name: "Frontend"
+#         url: "https://github.com/DEM1TASSE/Healper-FrontEnd"
+#       - name: "Backend"
+#         url: "https://github.com/Gxyrious/Healper-BackEnd"

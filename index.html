@@ -23,7 +23,7 @@ navbar_title: Home
 </section>
 
 <section id="experiences">
-    <h6 class="section-title mb-3 mt-4" style="font-size: 1.5rem;">Experience</h6>
+    <h6 class="section-title mb-3 mt-4" style="font-size: 1.5rem;">Experiences</h6>
     <div class="row">
         {% for experience in site.data.profile.experience %}
         <div class="col-12 col-md-6 col-lg-4">
@@ -44,7 +44,7 @@ navbar_title: Home
     {% endif %}
 </section>
 
-<section id="projects">
+<!-- <section id="projects">
     <h6 class="section-title mb-3 mt-4" style="font-size: 1.5rem;">Selected Projects</h6>
     <div class="row g-4">
         {% for project in site.data.profile.projects limit:2 %}
@@ -59,7 +59,7 @@ navbar_title: Home
         </div>
         {% endfor %}
     </div>
-</section>
+</section> -->
 
 <section id="honors" class="mb-4">
     {% include widgets/awards_card.html %}
