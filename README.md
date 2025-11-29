@@ -8,7 +8,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/luost26/academic-homepage)](https://github.com/luost26/academic-homepage)
 [![GitHub forks](https://img.shields.io/github/forks/luost26/academic-homepage)](https://github.com/luost26/academic-homepage/forks)
 
-A GitHub Pages (Jekyll) template for personal academic website. Click [here](https://luost.me/academic-homepage/) to see the demo.
+A GitHub Pages (Jekyll) template for personal academic website. Click [here](https://xzwu-ui.github.io/) to see the demo.
 
 ## User Community
 
