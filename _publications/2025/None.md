@@ -4,7 +4,7 @@ date: 2024-03-01
 selected: true
 pub: "CoRL"
 pub_date: "2025"
-pub_last: ' <span class="badge badge-pill badge-primary">Oral</span>'
+pub_last: ' <span class="badge badge-pill badge-primary">Oral </span>'
 cover: /assets/images/covers/none.gif
 abstract: >-
   None.
