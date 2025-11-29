@@ -1,6 +1,5 @@
 ---
 title: >-
-    <a href="https://osu-nlp-group.github.io/UGround">UGround</a> was accepted as
-    <span class="badge badge-pill badge-primary">ICLR 2025 Oral (1.8%)</span>! 
-date: 2025-02-11 09:00:00 +0800
+    The first draft of <a href="https://xzwu-ui.github.io/"> my personal homepage </a> is done. 
+date: 2025-11-29 09:00:00 +0800
 --- 

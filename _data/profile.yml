@@ -1,16 +1,16 @@
-primary_name: "Demi Ruohan Wang"
+primary_name: "Xingze Wu"
 secondary_name: ""
-navbar_name: "Demi Ruohan Wang"
+navbar_name: "Xingze Wu"
 
 # positions:
 # - name: Undergraduate @TongjiUni
 
 # cv_link: link-to-your-cv-file
-gscholar: https://scholar.google.com/citations?user=Lz9tCVsAAAAJ&hl=zh-CN&authuser=2
-github: DEM1TASSE
-twitter: demisama_
-linkedin: demi-ruohanwang
-email: "demiw@andrew.cmu.edu"
+# gscholar: https://scholar.google.com/citations?user=Lz9tCVsAAAAJ&hl=zh-CN&authuser=2
+# github: DEM1TASSE
+# twitter: xingzewu24
+# linkedin: xingzewu24
+email: "xingze275@gmail.com"
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
@@ -20,17 +20,14 @@ email: "demiw@andrew.cmu.edu"
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Hi there👋 I'm Demi Ruohan Wang, a Master's student at <a href="https://lti.cs.cmu.edu/" target="_blank">Carnegie Mellon University, Language Technologies Institute</a>.
+    Hi there👋 I'm Xingze Wu,  a sophomore at <a href="https://www.dlut.edu.cn/" target="_blank">Dalian University of Technology</a>.
   </p>
   <p>
-    In a short term, I'm focused on conducting research on <strong>large language models (LLMs)</strong>, as well as learning to be a <strong>full-stack independent developer</strong>. In the long run, I hope to build a startup and contribute to the development of <strong>AGI</strong>.
+    My research interests lie in advancing <strong> humanoid robotics </strong> to make <strong> robots more human-like </strong> in their <strong> behavior </strong> and <strong> interaction </strong> .
   </p>
   <p>
-    I've gained research experience through internships at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank">Microsoft Research Asia</a>, <a href="https://www.bytedance.com/en/" target="_blank">ByteDance</a> and <a href="https://x.com/osunlp" target="_blank">OSU NLP Group</a> (supervised by <a href="https://ysu1989.github.io/" target="_blank">Prof. Yu Su</a>). 
-    I'm currently interested in <strong>building agents</strong> that can <strong>better understand and execute tasks</strong>, and enhancing <strong>model's multimodal reasoning abilities</strong> to support this.
-  </p>
-  <p>
-    I am seeking Summer 2026 internships as a Machine Learning Engineer or Research Scientist. Feel free to reach out if you have relevant opportunities!
+  This site was created solely to learn how to build an academic homepage. <br>
+  If you notice any problems—including potential <span class="highlight" style="font-weight: 700;">copyright issues</span> —please <a class="highlight contact-trigger" data-toggle="modal" data-target="#modal-contact">contact me</a> immediately.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -38,23 +35,16 @@ portrait_url: /assets/images/photos/portrait.jpg
 portrait_offset: 16px
 # portrait_caption: >-
 #   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+contact_modal_image: /assets/images/WeChat.png
+contact_modal_caption: |
+  I sincerely apologize for forking and used your site without permission.
+  Contact me on WeChat at 19265671072 so I can rectify the matter immediately.
 
 education:
-  - school: Carnegie Mellon University
-    major: "Master's degree, Intelligent Information Systems"
-    logo: /assets/images/badges/cmu_logo.png
-    submajor: "School of Computer Science, Language Technologies Institute"
-    date: Aug. 2025 - Dec. 2026 (Expected)
-  - school: Tongji University
-    major: Bachelor of Software Engineering
-    logo: /assets/images/badges/tongji_logo.png
-    date: Sept. 2020 - Jun. 2025
-
-  - school: University of California, Berkeley
-    major: Visiting Student
-    submajor: Electrical Engineering and Computer Sciences
-    logo: /assets/images/badges/berkeley_logo.png
-    date: Jan. 2023 - Aug. 2023
+  - school: Dalian University of Technology
+    major: "Bachelor's degree"
+    logo: /assets/images/badges/dlut_logo.png
+    date: Sept. 2024 - Jun. 2028 (Expected)
 
 # experience:
 # - name: Peking University
@@ -62,24 +52,24 @@ education:
 #   position: Research Intern
 #   date: Sep. 2019 - Jul. 2021
 
-experience:
-  - company: "Microsoft Research Asia"
-    position: "Research Intern"
-    date: "Mar. 2025 - Jul. 2025"
-    logo: "assets/images/badges/microsoft_logo.png"
-    brief: "Exploring efficient and effective LLM reasoning with RLVR"
+# experience:
+#  - company: "Microsoft Research Asia"
+#    position: "Research Intern"
+#    date: "Mar. 2025 - Jul. 2025"
+#    logo: "assets/images/badges/microsoft_logo.png"
+#    brief: "Exploring efficient and effective LLM reasoning with RLVR"
 
-  - company: "The Ohio State University"
-    position: "Research Intern"
-    date: "Apr. 2024 - Oct. 2024"
-    logo: "/assets/images/badges/ohio_logo.png"
-    brief: "Enhancing grounding toward more generalist GUI agents"
+#  - company: "The Ohio State University"
+#    position: "Research Intern"
+#    date: "Apr. 2024 - Oct. 2024"
+#    logo: "/assets/images/badges/ohio_logo.png"
+#    brief: "Enhancing grounding toward more generalist GUI agents"
 
-  - company: "ByteDance"
-    position: "Machine Learning Engineer Intern"
-    date: "Oct. 2023 - Feb. 2024"
-    logo: "/assets/images/badges/bytedance_logo.png"
-    brief: "Enhancing e-commerce violation detection with LLMs"
+#  - company: "ByteDance"
+#    position: "Machine Learning Engineer Intern"
+#    date: "Oct. 2023 - Feb. 2024"
+#    logo: "/assets/images/badges/bytedance_logo.png"
+#    brief: "Enhancing e-commerce violation detection with LLMs"
 
   # - company: "University of California, Berkeley"
   #   position: "Undergraduate Researcher"
@@ -87,19 +77,6 @@ experience:
   #   logo: "/assets/images/badges/berkeley_logo.png"
   #   brief: "Building and analyzing Irish <br> drama corpus"
 
-awards:
-- name: No. 352 (Top 1%), Alibaba Global Mathematics Competition Qualifying Round
-  date: Jun. 2024
-- name: First Prize in International Exchange Scholarship, Tongji University
-  date: Mar. 2024
-- name: Berkeley Global Access Scholarship, Berkeley Extension
-  date: Nov. 2022
-- name: Scholarship for Outstanding Students, Tongji University
-  date: Nov. 2022 & Oct. 2021
-- name: Second Prize, China National High School Mathematics Competition
-  date: Sep. 2019
-- name: Honor Roll (Top 5%), American Mathematics Competition 12
-  date: Feb. 2018
 
 # projects:
 #   - title: "Life Buddy"

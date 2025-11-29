@@ -51,7 +51,7 @@
                             </a>
                             {% endif %}
 
-                            <a class="px-2" target="_blank" href="{{ '/assets/materials/CV_Demi Wang.pdf' | relative_url }}">
+                            <a class="px-2" target="_blank" href="{{ '/assets/materials/copy.pdf' | relative_url }}">
                                 <i class="fas fa-file-alt"></i>
                             </a>
 
@@ -86,10 +86,53 @@
 </div>
 {% endif %}
 
+{% if site.data.profile.contact_modal_image or site.data.profile.contact_modal_caption %}
+<div class="modal fade" id="modal-contact" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                {% assign contact_image = site.data.profile.contact_modal_image | default: site.data.profile.portrait_url %}
+                <img src="{{ contact_image | relative_url }}" class="img-fluid">
+            </div>
+            {% if site.data.profile.contact_modal_caption %}
+            <div class="modal-body py-2 text-center contact-caption">
+                {{ site.data.profile.contact_modal_caption }}
+            </div>
+            {% endif %}
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
 <style>
 @media (max-width: 768px) {
     .text-profile-bio {
         font-size: 0.95rem !important;
     }
+}
+
+.text-profile-bio .highlight {
+    font-weight: 700;
+    color: #0e84ff;
+    background: linear-gradient(90deg, rgba(14, 132, 255, 0.15), rgba(14, 132, 255, 0.05));
+    border: 1px solid rgba(14, 132, 255, 0.3);
+    padding: 0 0.35rem;
+    border-radius: 0.35rem;
+    box-shadow: 0 0 0 1px rgba(14, 132, 255, 0.15);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-profile-bio .highlight:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 1px rgba(14, 132, 255, 0.45), 0 8px 20px rgba(14, 132, 255, 0.15);
+}
+
+.contact-caption {
+    white-space: pre-line;
 }
 </style>

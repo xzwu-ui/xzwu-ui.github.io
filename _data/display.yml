@@ -8,3 +8,7 @@ homepage:
 # if you keep the link to the template so that more people can benefit from it. Thanks!
 footer_text: >-
   <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
+
+# Optional: add a short introduction for an additional person/team you want to credit.
+# Replace the placeholder name/link/text below with the actual person you want to highlight.
+footer_extra: " <a href=\"https://github.com/DEM1TASSE/dem1tasse.github.io\" target=\"_blank\" rel=\"noopener\"><i class=\"fas fa-user\"></i> dem1tasse.github.io </a> ."

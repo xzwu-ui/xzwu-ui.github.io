@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Homepage - Xingze Wu</title>
+
+    <!-- Favicon (single PNG) -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon_d.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/global.css">
+</head>
+<body class="bg-light" >
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" style="margin-left: 14%;"><strong>Xingze Wu</strong></a>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive" style="margin-right: 12%; font-size: 1.05rem;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiences">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#publications">Publications</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+.navbar {
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(5px);
+    transition: transform 0.5s ease-in-out;
+    height: 60px;
+}
+
+.navbar-hidden {
+    transform: translateY(-100%);
+}
+</style>
+
+<!-- HTML 和 CSS 部分保持不变 -->
+
+<script>
+let lastScrollTop = 0;
+let scrollTimeout;
+const navbar = document.querySelector('.navbar');
+const scrollThreshold = 10;
+
+// 监听滚动事件
+window.addEventListener('scroll', () => {
+    // 清除之前的定时器
+    clearTimeout(scrollTimeout);
+    
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // 如果滚动距离超过导航栏高度，则隐藏导航栏
+    if (scrollTop > navbar.offsetHeight) {
+        navbar.classList.add('navbar-hidden');
+    }
+    
+    // 设置新的定时器，停止滚动 300ms 后显示导航栏
+    scrollTimeout = setTimeout(() => {
+        navbar.classList.remove('navbar-hidden');
+    }, 300);
+    
+    lastScrollTop = scrollTop;
+});
+</script>
+
+    <div class="container px-0">
+        <div class="row justify-content-center mx-0">
+            <div class="col-12 col-lg-9">
+                <div class="top-space"></div>
+
+<section id="profile" class="mb-4">
+    <div class="row">
+    <div class="col">
+        <div class="card profile-card border-0 shadow-sm bg-white">
+            <div class="card-body pt-md-4 pt-mb-2 px-md-5 px-4 pb-3">
+                <div class="row align-items-center">
+                    <!-- 左侧：自我介绍 -->
+                    <div class="col-md-9 p-md-2">
+                        <div class="h1 font-weight-normal profile-name">
+                            Xingze Wu <small></small>
+                        </div>
+                        <div class="text-profile-bio mt-3" >
+                            <p>
+  Hi there👋 I'm Xingze Wu,  a sophomore at <a href="https://www.dlut.edu.cn/" target="_blank">Dalian University of Technology</a>.
+</p> <p>
+  My research interests lie in advancing <strong> humanoid robotics </strong> to make <strong> robots more human-like </strong> in their <strong> behavior </strong> and <strong> interaction </strong> .
+</p> <p> This site was created solely to learn how to build an academic homepage. <br> If you notice any problems—including potential <span class="highlight" style="font-weight: 700;">copyright issues</span> —please <a class="highlight contact-trigger" data-toggle="modal" data-target="#modal-contact">contact me</a> immediately. </p>
+                        </div>
+                    </div>
+
+                    <!-- 右侧：头像和社交媒体图标 -->
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        
+                        <div class="portrait-container portrait-offset mb-2" style="--avatar-offset: 16px;">
+                            <img 
+                                src="/assets/images/photos/portrait.jpg" 
+                                class="portrait-img"
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                title="">
+                        </div>
+                        
+
+                        <div class="social-icons mt-2 d-flex justify-content-center">
+                            
+
+                            
+
+                            
+
+                            
+
+                            <a class="px-2" target="_blank" href="/assets/materials/copy.pdf">
+                                <i class="fas fa-file-alt"></i>
+                            </a>
+
+                            <a class="px-2" href="mailto:xingze275@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="modal-contact" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                
+                <img src="/assets/images/WeChat.png" class="img-fluid">
+            </div>
+            
+            <div class="modal-body py-2 text-center contact-caption">
+                I sincerely apologize for forking and used your site without permission.
+Contact me on WeChat at 19265671072 so I can rectify the matter immediately.
+
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+@media (max-width: 768px) {
+    .text-profile-bio {
+        font-size: 0.95rem !important;
+    }
+}
+
+.text-profile-bio .highlight {
+    font-weight: 700;
+    color: #0e84ff;
+    background: linear-gradient(90deg, rgba(14, 132, 255, 0.15), rgba(14, 132, 255, 0.05));
+    border: 1px solid rgba(14, 132, 255, 0.3);
+    padding: 0 0.35rem;
+    border-radius: 0.35rem;
+    box-shadow: 0 0 0 1px rgba(14, 132, 255, 0.15);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-profile-bio .highlight:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 1px rgba(14, 132, 255, 0.45), 0 8px 20px rgba(14, 132, 255, 0.15);
+}
+
+.contact-caption {
+    white-space: pre-line;
+}
+</style>
+
+</section>
+
+<section id="news" class="mb-4">
+    
+        
+        
+            <div class="row mb-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <h6 class="news-title mb-3"><i class="fas fa-rss"></i> News</h6>
+                <div class="px-3">
+                    
+                    <div class="media py-2 ">
+                        
+                        <div class="mr-3 text-muted news-year">2025</div>
+                        <div class="media-body">
+                            
+                            <div class="d-flex news-item">
+                                <div class="news-content">The first draft of <a href="https://xzwu-ui.github.io/"> my personal homepage </a> is done. </div>
+                                <div class="ml-auto mt-auto text-muted no-break news-date"><i>Nov 29</i></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+<style>
+/* 桌面端样式 */
+.news-title {
+    font-size: 1.5rem !important;
+}
+
+.news-year {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 0.4rem;  /* 调整年份垂直对齐 */
+    min-width: 4rem;     /* 确保年份宽度一致 */
+}
+
+.news-item {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;    /* 增加条目间距 */
+}
+
+.media {
+    align-items: flex-start;  /* 确保年份和新闻顶部对齐 */
+    padding: 0.5rem 0;        /* 增加年份组之间的间距 */
+    transition: all 0.3s ease;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    margin-bottom: 0 !important;
+}
+
+.media:hover {
+    background-color: #f8f9fa;
+    border-color: #e9ecef;
+}
+
+.news-date {
+    font-size: 1rem;
+}
+
+/* 修改卡片 hover 效果和间距 */
+.card.border-0.shadow-sm.bg-white {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+    transition: box-shadow 0.3s ease;
+}
+
+.card.border-0.shadow-sm.bg-white:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+    .news-title {
+        font-size: 1rem !important;  
+    }
+    
+    .news-year {
+        font-size: 1rem;  
+        margin-top: 0.25rem;
+    }
+    
+    .news-item {
+        font-size: 0.95rem;  
+        line-height: 1.5;
+        margin: 0.5rem 0;
+    }
+    
+    .news-date {
+        font-size: 0.9rem;
+    }
+
+    .media {
+        margin-bottom: 0 !important;
+        padding: 0.8rem;
+    }
+}
+</style>
+
+        
+    
+</section>
+
+<section id="education" class="mb-4">
+    <div class="row mt-3">
+    <div class="col">
+        <div class="card education-card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                
+                <h6 class="mb-3 education-title">Education</h6>
+                <ul class="list-unstyled mb-0">
+                    
+                    <li class="education-item media">
+                        
+                        <div class="logo-container mr-4 p-2 d-flex align-items-center">
+                            <img src="/assets/images/badges/dlut_logo.png" alt="Dalian University of Technology" class="education-logo">
+                        </div>
+                        
+                        <div class="media-body">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="school-name"><strong>Dalian University of Technology</strong></div>
+                                <div class="education-date"><em>Sept. 2024 - Jun. 2028 (Expected)</em></div>
+                            </div>
+                            <div class="text-muted mb-1 education-major">Bachelor's degree</div>
+                            
+                        </div>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.education-item {
+    transition: all 0.3s ease;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+}
+
+.education-item:hover {
+    background-color: #f8f9fa;
+    border-color: #e9ecef;
+}
+
+.education-item.media {
+    margin-bottom: 0 !important;
+}
+
+.education-title {
+    font-size: 1.6rem;
+}
+
+.logo-container {
+    min-width: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.education-logo {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+}
+
+.school-name {
+    font-size: 1.4rem;
+}
+
+.education-date {
+    font-size: 1.1rem;
+}
+
+.education-major,
+.education-submajor {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .education-card .card-body {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .education-item.media {
+        margin-bottom: 0 !important;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .education-item.media:last-child {
+        margin-bottom: 0 !important;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .education-title {
+        font-size: 1.2rem !important;
+    }
+
+    .school-name {
+        font-size: 1.1rem;
+    }
+
+    .education-date {
+        font-size: 0.9rem;
+        align-self: center;
+    }
+
+    .education-major,
+    .education-submajor {
+        font-size: 0.9rem;
+    }
+
+    .education-logo {
+        width: 64px;
+        height: 64px;
+    }
+
+    .logo-container {
+        min-width: 48px;
+        margin-right: 0.8rem !important;
+        align-self: center;
+    }
+}
+</style> 
+</section>
+
+<section id="experiences">
+    <h6 class="section-title mb-3 mt-4" style="font-size: 1.5rem;">Experiences</h6>
+    <div class="row">
+        
+    </div>
+</section>
+
+<section id="publications" class="mb-4">
+    
+        
+        
+<div class="my-2 p-0 bg-white shadow-sm rounded-sm">
+    <h6 class="publication-title border-bottom border-gray p-4 mb-0">
+        Publications
+    </h6>
+    
+        <style>
+    .btn-sm {
+        padding: 0.1rem 0.5rem !important;
+    }
+    
+    .publication-title {
+        font-size: 1.4rem;
+    }
+    
+    .publication-authors {
+        font-size: 1.05rem;
+    }
+    
+    .publication-abstract {
+        font-size: 1rem;
+    }
+
+    .publication-item i {  /* 针对期刊/会议名称 */
+        font-size: 1rem;
+    }
+
+    .publication-item .badge {  /* 针对 badge */
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+        margin-left: 0.2rem;
+    }
+
+    .publication-item .pub-date {
+        font-size: 1rem;
+    }
+
+    .publication-image-col {
+        width: 23% !important;
+        max-width: 23% !important;
+        padding: 1rem !important;
+    }
+
+    .publication-image-col > div {
+        height: 100%;
+    }
+
+    .publication-content-col {
+        width: 77% !important;
+        padding-right: 2% !important;
+    }
+
+    .publication-item {
+        transition: box-shadow 0.3s ease;
+        border-radius: 0.375rem;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+        margin-bottom: 1rem;
+        background-color: white;
+    }
+
+    .publication-item:hover {
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    }
+
+    @media (max-width: 768px) {
+        .publication-item h5 {
+            font-size: 1.2rem !important;
+        }
+
+        .publication-item p {
+            font-size: 1rem !important;
+        }
+
+        .publication-item i {
+            font-size: 1rem !important;
+        }
+
+        .publication-item .badge {
+            font-size: 0.8rem !important;
+            padding: 0.15rem 0.4rem !important;
+        }
+
+        .publication-item .btn-sm {
+            font-size: 0.9rem !important;
+            padding: 0.1rem 0.4rem !important;
+        }
+
+        .publication-item .text-muted {
+            font-size: 0.85rem !important;
+        }
+
+        .publication-item .pub-date {
+            font-size: 1rem !important;
+        }
+    }
+</style>
+
+<div class="publication-item d-none d-md-block">
+    <div class="row no-gutters border-bottom border-gray">
+        <div class="publication-image-col"><div style="height: 100%;">
+                
+                <img data-src="/assets/images/covers/none.gif" alt="None" class="lazy rounded-sm" style="width: 100%; height: 100%; object-fit: cover;" src="/assets/images/empty_300x200.png">
+                
+            </div></div>
+        <div class="publication-content-col p-3 pl-md-0">
+            <h5 class="publication-title mt-0 mb-1 font-weight-normal"><strong>None</strong></h5>
+            <p class="publication-authors mt-0 mb-0"><span class="text-body">
+            Xingze Wu</span></p>
+            <p class="mt-1 mb-0 small"><i>CoRL</i> <span class="pub-date">2025</span>  <span class="badge badge-pill badge-primary">Oral (1.8%)</span></p>
+            <p class="publication-abstract mt-0 mb-2 text-muted">None.</p>
+
+            <div class="mt-2">
+                
+                
+                <a target="_blank" href="https://arxiv.org" class="btn btn-sm btn-outline-primary mr-2 mb-2">
+                    Paper
+                </a>
+                
+                
+                
+                <a target="_blank" href="https://github.com" class="btn btn-sm btn-outline-primary mr-2 mb-2">
+                    Code
+                </a>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item row no-gutters d-md-none border-bottom border-gray   lazy" data-src="/assets/images/covers/none.gif">
+    <div class="w-100" style="background-color: rgba(255,255,255,0.9);">
+        <div class="d-flex align-items-start flex-column py-3 px-4">
+            <div class="mb-auto"></div>
+            <div>
+                <h5 class="mt-0 mb-1 font-weight-normal">None</h5>
+                <p class="mt-0 mb-0" style="font-size: 1rem;"><span class="text-body">
+            Xingze Wu</span></p>
+                <p class="mt-0 mb-0 small"><i>CoRL</i> <span class="pub-date">2025</span>  <span class="badge badge-pill badge-primary">Oral (1.8%)</span></p>
+                <p class="mt-0 mb-2 text-muted" style="font-size: 0.85rem;">None.</p>
+
+                <div class="mt-2">
+                    
+                    
+                    <a target="_blank" href="https://arxiv.org" class="btn btn-sm btn-outline-primary mr-2 mb-2">
+                        Paper
+                    </a>
+                    
+                    
+                    
+                    <a target="_blank" href="https://github.com" class="btn btn-sm btn-outline-primary mr-2 mb-2">
+                        Code
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+    
+</div>
+
+<style>
+/* 桌面端样式 */
+.publication-title {
+    font-size: 1.5rem;
+}
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+    body .publication-title {
+        font-size: 1.2rem !important;
+        padding: 0.8rem !important;
+    }
+}
+</style>
+
+
+    
+</section>
+
+<!-- <section id="projects">
+    <h6 class="section-title mb-3 mt-4" style="font-size: 1.5rem;">Selected Projects</h6>
+    <div class="row g-4">
+        
+        
+        
+    </div>
+</section> -->
+
+<section id="honors" class="mb-4">
+    <div class="row mt-md-2">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.award-item {
+    transition: all 0.3s ease;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.award-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.award-date {
+    margin-left: 2rem;
+    white-space: nowrap;
+}
+
+.award-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #666;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+    .card-body h6 {
+        font-size: 1.2rem !important;
+    }
+
+    .list {
+        font-size: 0.9rem !important;
+        padding-left: 0.5rem !important;
+    }
+
+    .award-name {
+        font-size: 0.9rem !important;
+    }
+
+    .award-date {
+        font-size: 0.85rem !important;
+        margin-left: 1rem !important;
+    }
+
+    .award-dot {
+        width: 5px !important;
+        height: 5px !important;
+        margin-right: 0.6rem !important;
+    }
+
+    .award-item {
+        padding: 0.2rem 0.4rem !important;
+    }
+}
+</style>
+</section>
+
+<section id="about">
+    <div class="row about-me-container">
+    <div class="col">
+        <div class="card about-me-card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <h6 class="mb-4" style="font-size: 1.5rem;">About Me</h6>
+                <div class="about-content" style="font-size: 1.1rem; padding-left: 1rem; line-height: 1.8;">
+                    
+                    <p class="mb-2">    
+                        I'm driven by an insatiable curiosity. 
+                    </p>
+
+                    <p class="mb-2">I love <strong>reading</strong> 📖and hope to finish all the outstanding books in the world.</p>
+
+                    <p class="mb-2">I enjoy playing the <strong>piano</strong> 🎹 , but I'm far from virtuoso 🥲. 
+                        <!-- —listen to my music <a href="https://music.163.com/#/artist?app_version=8.10.81&id=50221641&dlt=0846" target="_blank" class="text-primary">here</a>. -->
+                    </p>
+
+
+                    <p class="mb-2">In my free time, I  <strong>ski</strong> ⛷️, 
+                    <strong>swim</strong> 🏊‍♂️,
+                    and play <strong>board games & puzzles</strong> 🧩. </p>
+
+                    <p class="mb-2">I'm passionate about <strong>traveling</strong> ✈️. Travel, to me, is to <strong>wander</strong>, to <strong>wonder</strong> and to <strong>witness</strong>: 
+                    <strong>wander</strong> 🚶‍♂️🗺️ through streets, 
+                    <strong>wonder</strong> 🤔✨ at every culture's tale📚🏛️, and <strong>witness</strong> 👀🌄 nature's grandeur🌊🌲—until one day I have circled the globe🌍 and gathered all its stories for my own💖. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<style>
+.about-me-container {
+    margin-top: 2rem;  /* web端的边距 */
+}
+
+@media (max-width: 768px) {
+    .about-me-container {
+        margin-top: 1.5rem;  /* 移动端的边距 */
+    }
+
+    .card-body h6 {
+        font-size: 1.2rem !important;
+    }
+    
+    .about-content {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        padding-bottom: 1rem !important;
+    }
+}
+</style> 
+</section>
+
+<div class="clustrmap-container text-center my-5">
+    <div class="col-6 col-md-4 col-lg-3 mx-auto">
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=XHaXkpOTTE5tc91XdgumuUNVKkhiazgLFtFwzyDAiv4"></script>
+    </div>
+</div>
+
+<style>
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.2rem !important;
+    }
+    
+    #projects .col-12 {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    #projects .col-12:last-child {
+        margin-bottom: 2rem !important;
+    }
+}
+</style>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="height: 60px; display: flex; align-items: center;">
+    <div class="container">
+        <div class="row my-3">
+            <div class="col-6">
+                <div class="text-muted footer-text">
+                    Last updated: Nov 2025
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="text-right text-muted footer-text">
+                    Built based on <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>&nbsp;and  <a href="https://github.com/DEM1TASSE/dem1tasse.github.io" target="_blank" rel="noopener"><i class="fas fa-user"></i> dem1tasse.github.io </a> .
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+/* 桌面端样式 */
+@media (min-width: 769px) {
+    .footer-text {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        white-space: nowrap;
+    }
+}
+</style>
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/github-buttons/2.14.2/buttons.min.js" integrity="sha512-OYwZx04hKFeFNYrWxIyo3atgGpb+cxU0ENWBZs72X7T9U+NoHPM1ftUn/Mfw7dRDXrqWA6M1wBg6z6fGE32aeA==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false}
+              ],
+              throwOnError : false
+            });
+        });
+    </script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/bubble_visual_hash.js"></script>
+</body>
+</html>

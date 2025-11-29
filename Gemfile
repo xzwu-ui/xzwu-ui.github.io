@@ -30,3 +30,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "webrick", "~> 1.7"
 gem "kramdown-parser-gfm"
+gem "base64"
+gem "bigdecimal"

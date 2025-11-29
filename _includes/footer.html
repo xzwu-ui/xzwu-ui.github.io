@@ -8,7 +8,7 @@
             </div>
             <div class="col-6">
                 <div class="text-right text-muted footer-text">
-                    Built based on &nbsp;{{ site.data.display.footer_text }}
+                    Built based on {{ site.data.display.footer_text }}{% if site.data.display.footer_extra %}&nbsp;and {{ site.data.display.footer_extra }}{% endif %}
                 </div>
             </div>
         </div>
@@ -21,6 +21,7 @@
     .footer-text {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
+        white-space: nowrap;
     }
 }
 </style>
