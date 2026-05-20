@@ -1,0 +1,120 @@
+primary_name: "Xingze Wu(吴星泽)"
+secondary_name: ""
+navbar_name: "Xingze Wu"
+
+# positions:
+# - name: Undergraduate @TongjiUni
+
+# cv_link: link-to-your-cv-file
+# gscholar: https://scholar.google.com/citations?user=Lz9tCVsAAAAJ&hl=zh-CN&authuser=2
+# github: DEM1TASSE
+# twitter: xingzewu24
+# linkedin: xingzewu24
+email: "xingze275@gmail.com"
+# wechat_qrcode: /assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+# linkedin: your-linked-in-id
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    Hi there👋 I'm Xingze Wu,  a sophomore at <a href="https://www.dlut.edu.cn/" target="_blank">Dalian University of Technology</a>.
+  </p>
+  <p>
+    My research interests lie in advancing <strong> humanoid robotics </strong> to make <strong> robots more human-like </strong> in their <strong> behavior </strong> and <strong> interaction </strong> .
+  </p>
+
+portrait_url: /assets/images/photos/portrait.jpg
+# Fine-tune avatar vertical position on desktop (e.g., -8px, 0px, 6px)
+portrait_offset: 16px
+# portrait_caption: >-
+#   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+contact_modal_image: /assets/images/WeChat.png
+contact_modal_caption: |
+  I sincerely apologize for forking and used your site without permission.
+  Contact me on WeChat at 19265671072 so I can rectify the matter immediately.
+
+education:
+  - school: Dalian University of Technology
+    major: "Bachelor's degree"
+    logo: /assets/images/badges/dlut_logo.png
+    date: Sept. 2024 - Jun. 2028 (Expected)
+
+# experience:
+# - name: Peking University
+#   logo: /assets/images/badges/PKU_red.png
+#   position: Research Intern
+#   date: Sep. 2019 - Jul. 2021
+
+# experience:
+#  - company: "Microsoft Research Asia"
+#    position: "Research Intern"
+#    date: "Mar. 2025 - Jul. 2025"
+#    logo: "assets/images/badges/microsoft_logo.png"
+#    brief: "Exploring efficient and effective LLM reasoning with RLVR"
+
+#  - company: "The Ohio State University"
+#    position: "Research Intern"
+#    date: "Apr. 2024 - Oct. 2024"
+#    logo: "/assets/images/badges/ohio_logo.png"
+#    brief: "Enhancing grounding toward more generalist GUI agents"
+
+#  - company: "ByteDance"
+#    position: "Machine Learning Engineer Intern"
+#    date: "Oct. 2023 - Feb. 2024"
+#    logo: "/assets/images/badges/bytedance_logo.png"
+#    brief: "Enhancing e-commerce violation detection with LLMs"
+
+  # - company: "University of California, Berkeley"
+  #   position: "Undergraduate Researcher"
+  #   date: "Feb. 2023 - May 2023"
+  #   logo: "/assets/images/badges/berkeley_logo.png"
+  #   brief: "Building and analyzing Irish <br> drama corpus"
+
+
+# projects:
+#   - title: "Life Buddy"
+#     image: "assets/images/projects/life-buddy.png"
+#     description: "Your personal lifestyle assistant for a budget-friendly life. Discover affordable dining, nail salons, entertainment, and more—all tailored to your preferences."
+#     highlight: "2nd Winner @Baidu AGI Hackathon"
+#     highlight_url: "https://aistudio.baidu.com/competition/detail/1103/0/introduction"
+#     links:
+#       - name: "Official Intro"
+#         url: "https://hub.baai.ac.cn/view/33801"
+#       - name: "Post"
+#         url: "https://www.linkedin.com/posts/demi-ruohanwang_aihackathon-ai-innovation-activity-7142910582927540224-0iTP"
+    
+#   - title: "Let them cook"
+#     image: "assets/images/projects/let-them-cook.png"
+#     description: "Nearly 40% of food in the U.S. is wasted. Reduce yours by Leting Them Cook, a recipe AI tool that generates fridge-cleaning recipes that are both beneficial to your wallet and the world."
+#     highlight: "@CalHack 9.0"
+#     highlight_url: "https://hackberkeley.org/"
+#     links:
+#       - name: "Devpost"
+#         url: "https://devpost.com/software/let-them-cook-9yb6za"
+#       - name: "Code"
+#         url: "https://github.com/DEM1TASSE/Let-them-cook"
+    
+#   - title: "cowbell.ai"
+#     image: "assets/images/projects/cowbell.ai.png"
+#     description: "Unopinionated music production assistant. Any instrument, anywhere."
+#     highlight: "@Outside LLMs Hackathon"
+#     highlight_url: "https://outsidellms.devpost.com/"
+#     links:
+#       - name: "Devpost"
+#         url: "https://devpost.com/software/cowbell-ai"
+#       - name: "Code"
+#         url: "https://github.com/DEM1TASSE/cowbell.ai"
+#       - name: "Demo"
+#         url: "https://x.com/jianghoy/status/1688368655166513153"
+    
+#   - title: "Healper"
+#     image: "assets/images/projects/healper.png"
+#     description: "An AI-powered platform for psychological counseling support—assess your mental state, connect with professional counselors, and streamline record-keeping."
+#     links:
+#       - name: "Frontend"
+#         url: "https://github.com/DEM1TASSE/Healper-FrontEnd"
+#       - name: "Backend"
+#         url: "https://github.com/Gxyrious/Healper-BackEnd"

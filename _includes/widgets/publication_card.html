@@ -1,0 +1,25 @@
+{% assign publications = include.publications %}
+<div class="my-2 p-0 rounded-sm publication-wrapper">
+    <h6 class="publication-title border-bottom border-gray p-4 mb-0">
+        Publications
+    </h6>
+    {% for item in publications limit:include.limit %}
+        {% include widgets/publication_item.html item=item first=false last=false %}    
+    {% endfor %}
+</div>
+
+<style>
+/* 桌面端样式 */
+.publication-title {
+    font-size: 1.5rem;
+}
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+    body .publication-title {
+        font-size: 1.2rem !important;
+        padding: 0.8rem !important;
+    }
+}
+</style>
+
